@@ -1,0 +1,33 @@
+:root {
+    --primary-color: #6e7964ff; /* Cor principal (Verde Escuro Alpha) */
+    --hover-color: #5c6353ff;    /* Cor de hover para botões */
+    --error-icon-color: #e57373; /* Cor vermelha para o ícone de bloqueio */
+    --background-color: #f0f0f0; /* Fundo suave para a tela */
+}
+
+.access-denied-page {
+    background-color: var(--background-color);
+    min-height: calc(100vh - 64px); /* Garante que preencha a tela abaixo do header fixo */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente o contêiner */
+}
+
+.error-icon {
+    /* Estilo do LockIcon */
+    color: var(--error-icon-color);
+}
+
+.error-title {
+    /* Estilo do título "Acesso Negado" */
+    color: #333;
+    font-weight: 500;
+}
+.home-button {
+    /* Estilos do botão "Voltar para o Início" */
+    background: var(--primary-color);
+    margin-top: 24px; /* mt: 3 no MUI */
+}
+
+.home-button:hover {
+    background-color: var(--hover-color);
+}

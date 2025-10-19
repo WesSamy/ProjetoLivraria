@@ -1,0 +1,43 @@
+:root {
+    --primary-color: #6e7964ff; /* Cor principal da aplicação (Verde Escuro Alpha) */
+    --hover-color: #5a6450;    /* Cor de hover para botões */
+    --background-color: #f7f7f7; /* Um fundo leve para contraste */
+    --border-color: #ddd;      /* Borda padrão */
+}
+.configuracoes-page {
+    /* Define a cor de fundo de toda a seção principal */
+    background-color: var(--background-color);
+    min-height: 100vh;
+}
+.form-container {
+    /* Estilo da caixa que envolve o formulário (Box com border e padding) */
+    padding: 24px; /* p: 3 no MUI */
+    border: 1px solid var(--border-color); /* border: '1px solid #ddd' no MUI */
+    border-radius: 8px;
+    background-color: #b6b69b; /* Fundo branco para o formulário */
+
+}
+.form-title {
+    color: #333;
+    margin-bottom: 32px; /* mb: 4 no MUI */
+    font-weight: 500;
+}
+
+.upload-button {
+    color: var(--primary-color);
+}
+
+.submit-button {
+    /* Estilos do botão de Salvar Alterações */
+    background: var(--primary-color);
+    margin-top: 32px; /* mt: 4 no MUI */
+}
+
+.submit-button:hover {
+    background-color: var(--hover-color);
+}
+
+/* Avatar/Foto do Usuário */
+.user-avatar {
+    border: 2px solid var(--primary-color);
+}

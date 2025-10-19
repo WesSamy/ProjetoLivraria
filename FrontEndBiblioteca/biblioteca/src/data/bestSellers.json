@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "title": "Dom Quixote",
+        "author": "Miguel de Cervantes",
+        "genre": "Sátira, Aventura",
+        "description": "Considerado o primeiro romance moderno, narra as aventuras de um fidalgo espanhol que enlouquece ao ler romances de cavalaria.",
+        "sales_estimate": "500 milhões",
+        "image": "https://via.placeholder.com/300x450?text=Dom+Quixote"
+    },
+    {
+        "id": 2,
+        "title": "Um Conto de Duas Cidades",
+        "author": "Charles Dickens",
+        "genre": "Ficção Histórica",
+        "description": "Ambientado na época da Revolução Francesa, explora temas como sacrifício, redenção e a dualidade entre Londres e Paris.",
+        "sales_estimate": "200 milhões",
+        "image": "https://via.placeholder.com/300x450?text=Duas+Cidades"
+    },
+    {
+        "id": 3,
+        "title": "O Senhor dos Anéis",
+        "author": "J.R.R. Tolkien",
+        "genre": "Fantasia Épica",
+        "description": "A jornada de Frodo Bolseiro para destruir um Anel que pode levar à dominação do mundo, um marco da literatura fantástica.",
+        "sales_estimate": "150 milhões",
+        "image": "https://via.placeholder.com/300x450?text=Senhor+dos+Aneis"
+    },
+    {
+        "id": 4,
+        "title": "O Pequeno Príncipe",
+        "author": "Antoine de Saint-Exupéry",
+        "genre": "Fábula, Filosofia",
+        "description": "Uma fábula poética sobre um pequeno príncipe que viaja por planetas, explorando a natureza humana e o sentido da vida.",
+        "sales_estimate": "140 milhões",
+        "image": "https://via.placeholder.com/300x450?text=Pequeno+Principe"
+    },
+    {
+        "id": 5,
+        "title": "Harry Potter e a Pedra Filosofal",
+        "author": "J.K. Rowling",
+        "genre": "Fantasia Jovem Adulto",
+        "description": "O início da saga do menino bruxo Harry Potter, que descobre um mundo mágico e seus primeiros mistérios em Hogwarts.",
+        "sales_estimate": "120 milhões",
+        "image": "https://via.placeholder.com/300x450?text=Harry+Potter+1"
+    },
+    {
+        "id": 6,
+        "title": "E Não Sobrou Nenhum",
+        "author": "Agatha Christie",
+        "genre": "Mistério, Suspense",
+        "description": "Dez estranhos são atraídos para uma ilha e começam a morrer um a um, conforme a letra de uma antiga rima infantil. Tensão máxima.",
+        "sales_estimate": "100 milhões",
+        "image": "https://via.placeholder.com/300x450?text=Agatha+Christie"
+    },
+    {
+        "id": 7,
+        "title": "O Sonho da Câmara Vermelha",
+        "author": "Cao Xueqin",
+        "genre": "Clássico Chinês",
+        "description": "Um dos quatro grandes romances clássicos da China, narra a ascensão e queda da família Jia e os amores do jovem Baoyu.",
+        "sales_estimate": "100 milhões",
+        "image": "https://via.placeholder.com/300x450?text=Sonho+Vermelho"
+    },
+    {
+        "id": 8,
+        "title": "O Código Da Vinci",
+        "author": "Dan Brown",
+        "genre": "Thriller, Mistério",
+        "description": "Um simbologista se envolve em um mistério que revela segredos históricos e teorias da conspiração envolvendo a Igreja.",
+        "sales_estimate": "80 milhões",
+        "image": "https://via.placeholder.com/300x450?text=Codigo+Da+Vinci"
+    },
+    {
+        "id": 9,
+        "title": "O Alquimista",
+        "author": "Paulo Coelho",
+        "genre": "Ficção Filosófica",
+        "description": "A jornada de um pastor espanhol em busca de um tesouro nas pirâmides do Egito, aprendendo a seguir a lenda pessoal.",
+        "sales_estimate": "65 milhões",
+        "image": "https://via.placeholder.com/300x450?text=O+Alquimista"
+    },
+    {
+        "id": 10,
+        "title": "Cem Anos de Solidão",
+        "author": "Gabriel García Márquez",
+        "genre": "Realismo Mágico",
+        "description": "A saga épica da família Buendía na fictícia Macondo, explorando o tempo, a memória e a solidão ao longo de um século.",
+        "sales_estimate": "50 milhões",
+        "image": "https://via.placeholder.com/300x450?text=Cem+Anos"
+    },
+    {
+        "id": 11,
+        "title": "O Leão, a Feiticeira e o Guarda-Roupa",
+        "author": "C.S. Lewis",
+        "genre": "Fantasia",
+        "description": "Quatro irmãos descobrem o mundo mágico de Nárnia através de um guarda-roupa, onde a Rainha Branca mantém um inverno eterno.",
+        "sales_estimate": "85 milhões",
+        "image": "https://via.placeholder.com/300x450?text=Narnia"
+    },
+    {
+        "id": 12,
+        "title": "O Apanhador no Campo de Centeio",
+        "author": "J.D. Salinger",
+        "genre": "Literatura Jovem Adulta, Clássico",
+        "description": "A história de Holden Caulfield, um adolescente que acaba de ser expulso do internato e reflete sobre a falsidade do mundo adulto.",
+        "sales_estimate": "65 milhões",
+        "image": "https://via.placeholder.com/300x450?text=Apanhador"
+    },
+    {
+        "id": 13,
+        "title": "Heidi",
+        "author": "Johanna Spyri",
+        "genre": "Literatura Infantil",
+        "description": "As aventuras da jovem órfã Heidi que vai morar com seu avô nos Alpes suíços, um conto atemporal sobre a vida simples e a natureza.",
+        "sales_estimate": "50 milhões",
+        "image": "https://via.placeholder.com/300x450?text=Heidi"
+    },
+    {
+        "id": 14,
+        "title": "O Nome da Rosa",
+        "author": "Umberto Eco",
+        "genre": "Mistério, Histórico",
+        "description": "Na Itália medieval, um frade franciscano investiga uma série de mortes misteriosas em um mosteiro beneditino.",
+        "sales_estimate": "50 milhões",
+        "image": "https://via.placeholder.com/300x450?text=Nome+da+Rosa"
+    },
+    {
+        "id": 15,
+        "title": "O Hobbit",
+        "author": "J.R.R. Tolkien",
+        "genre": "Fantasia",
+        "description": "A história de Bilbo Bolseiro e sua aventura inesperada com um grupo de anões para recuperar um tesouro guardado por um dragão.",
+        "sales_estimate": "100 milhões",
+        "image": "https://via.placeholder.com/300x450?text=O+Hobbit"
+    }
+]

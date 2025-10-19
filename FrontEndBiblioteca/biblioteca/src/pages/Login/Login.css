@@ -1,0 +1,239 @@
+/* ==================================== */
+/* 1. VARIÁVEIS DE CORES (TONS PASTÉIS) */
+/* ==================================== */
+:root {
+    --cor-fundo: #F4F1E1;           /* Creme claro para o fundo */
+    --cor-primaria: #8C9B7F;        /* Verde Sálvia Claro (Base) */
+    --cor-primaria-escura: #738A66; /* Verde Sálvia mais escuro para melhor contraste */
+    --cor-secundaria: #A8B2A4;      /* Cinza suave para bordas */
+    --cor-texto: #fefef1;           /* Cinza escuro para o texto */
+    --cor-link: #6A7F7D;            /* Azul suave para links */
+}
+
+/* ==================================== */
+/* 2. ESTILIZAÇÃO GLOBAL */
+/* ==================================== */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    /* Boa prática para usar rems baseados em 16px (padrão do navegador) */
+    font-size: 16px; 
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ==================================== */
+/* 3. FORMULÁRIO DE LOGIN */
+/* ==================================== */
+.pagina-login {
+    display: flex; /* Transforma o contêiner em um Flexbox */
+    width: 80%; /* Define uma largura geral para o contêiner */
+    max-width: 1000px; /* Limita o tamanho máximo */
+    min-height: 550px; /* Define uma altura mínima */
+    
+    /* Remove padding e alinhamento do centro que eram do formulário */
+    padding: 0; 
+    align-items: stretch;
+    justify-content: space-between; /* Espaçamento entre os itens */
+
+    background-color: white; /* Cor de fundo do contêiner */
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Sombra mais forte */
+    overflow: hidden; /* Garante que os filhos respeitem o border-radius */
+}
+.item-right {
+    flex: 1; /* Ocupa 50% do espaço (se o outro lado também for 'flex: 1') */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 2.5rem; /* Adiciona o padding que estava em .pagina-login */
+}
+/* Estilo para o lado esquerdo (Descrição/Capa) */
+.item-left {
+    flex: 1; /* Ocupa 50% do espaço */
+    background-image: url('../../assets/biblioteca.jpg'); /* Usando a imagem importada no JSX */
+    background-size: cover; /* Garante que a imagem cubra todo o espaço */
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Cor do texto sobre a imagem */
+    text-align: center;
+    padding: 40px;
+    /* Adicione um overlay para melhorar a leitura do texto */
+    position: relative;
+    z-index: 1; 
+}
+.item-left::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Overlay escuro de 40% de opacidade */
+    z-index: 2;
+}
+
+/* Garante que o conteúdo de texto fique sobre o overlay */
+.item-left > * {
+    z-index: 3;
+    position: relative;
+}
+
+.item-left h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.item-left p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.pagina-login h1 {
+    font-size: 24px; /* Tamanho do título aprimorado */
+    margin-bottom: 25px;
+    color: var(--cor-primaria-escura); /* Cor para melhor contraste */
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Estilo do formulário */
+.form-login {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 18px; /* Aumentei o espaçamento entre os campos */
+}
+
+/* Estilo dos labels */
+.form-login label {
+    font-size: 1.3rem; /* Usando rems */
+    color: var(--cor-texto);
+    font-weight: 500;
+    text-align: start;
+}
+
+/* Estilo dos inputs */
+.form-login input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 6px;
+    font-size: 1rem; /* Usando rems */
+    color: var(--cor-texto);
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+}
+
+.form-login input:focus {
+    border-color: var(--cor-primaria);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(140, 155, 127, 0.3); /* Sombra mais limpa e moderna */
+}
+
+/* Estilo do botão de login */
+.botao-primario {
+    display: flex;
+    padding: 14px;
+    background-color: var(--cor-primaria);
+    color: white;
+    font-size: 1rem; /* Usando rems */
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    letter-spacing: 0.5px; /* Novo: Pequeno espaçamento de letra */
+    margin-top: 5px; /* Ajuste sutil */
+}
+
+.botao-primario:hover {
+    background-color: #7a8f6c;
+}
+
+.botao-primario:active {
+    transform: translateY(1px);
+}
+
+/* Estilo para link de cadastro */
+.sign-up {
+    margin-top: 25px; /* Aumentei o espaço para separação visual */
+    font-size: 0.9rem; /* Usando rems */
+    color: black;
+    text-align: center; /* Centraliza o texto */
+}
+
+.sign-up a {
+    color: var(--cor-link);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.sign-up a:hover {
+    color: var(--cor-primaria-escura); /* Melhor contraste no hover */
+    text-decoration: underline;
+}
+
+/* ==================================== */
+/* 4. RESPONSIVIDADE (Mobile) */
+/* ==================================== */
+
+@media (max-width: 768px) {
+    /* Ajustes para permitir que o conteúdo role no mobile */
+    #root {
+        align-items: flex-start;
+        padding-top: 30px;
+        min-height: auto; 
+    }
+
+    .pagina-login {
+        /* Remove o flex em mobile para empilhar */
+        flex-direction: column;
+        width: 100%; /* Ocupa toda a largura */
+        box-shadow: none; /* Remove a sombra no mobile */
+        /* Ajuste para que o formulário apareça no topo */
+        max-width: 95%;
+        margin: 20px auto;
+    }
+    
+    /* Faz o lado esquerdo desaparecer ou ser muito pequeno no mobile */
+    .item-left {
+        display: none; /* A melhor abordagem é ocultar o banner */
+    }
+
+    /* Ajusta o contêiner do formulário para o mobile */
+    .item-right {
+        padding: 2rem 1.5rem;
+        width: 100%;
+    }
+
+
+    .pagina-login h1 {
+        font-size: 22px;
+    }
+
+    .form-login label,
+    .sign-up {
+        font-size: 0.95rem; 
+    }
+
+    .form-login input,
+    .botao-primario {
+        font-size: 1rem;
+    }
+}

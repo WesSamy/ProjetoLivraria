@@ -1,0 +1,150 @@
+/* ==================================== */
+/* 1. VARIÁVEIS DE CORES (TONS PASTÉIS) */
+/* ==================================== */
+:root {
+    --cor-fundo: #F4F1E1;      /* Creme claro para o fundo */
+    --cor-primaria: #8C9B7F;   /* Verde Sálvia Claro para botões */
+    --cor-secundaria: #A8B2A4; /* Cinza suave para bordas */
+    --cor-texto: #fefef1;      /* Cinza escuro para o texto */
+    --cor-link: #6A7F7D;       /* Azul suave para links */
+}
+
+/* ==================================== */
+/* 2. ESTILIZAÇÃO GLOBAL */
+/* ==================================== */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ==================================== */
+/* 3. FORMULÁRIO DE CADASTRO */
+/* ==================================== */
+.pagina-cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pagina-cadastro h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--cor-primaria);
+}
+
+/* Estilo do formulário */
+.form-cadastro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+/* Estilo dos labels */
+.form-cadastro label {
+    font-size: 14px;
+    color: var(--cor-texto);
+    font-weight: 500;
+}
+
+/* Inputs mais destacados */
+.form-cadastro input {
+    width: 100%;
+    padding: 16px 20px;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 8px;
+    font-size: 18px;
+    color: var(--cor-texto);
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.form-cadastro input:focus {
+    border-color: var(--cor-primaria);
+    outline: none;
+    box-shadow: 0 0 8px rgba(140, 155, 127, 0.7);
+}
+
+/* Botão maior, com largura fixa e centralizado */
+.botao-primario {
+    padding: 16px 0;
+    background-color: var(--cor-primaria);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 60%; /* largura fixa para centralizar */
+    margin: 20px auto 0 auto; /* centraliza o botão */
+    display: block;
+    box-shadow: 0 4px 12px rgba(140, 155, 127, 0.5);
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.1s;
+}
+
+.botao-primario:hover {
+    background-color: #7a8f6c;
+    box-shadow: 0 6px 15px rgba(140, 155, 127, 0.7);
+}
+
+.botao-primario:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 10px rgba(140, 155, 127, 0.4);
+}
+
+/* Estilo para link de login */
+.sign-in {
+    margin-top: 15px;
+    font-size: 14px;
+    color: var(--cor-texto);
+}
+
+.sign-in a {
+    color: var(--cor-link);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.sign-in a:hover {
+    color: var(--cor-primaria);
+    text-decoration: underline;
+}
+
+/* ==================================== */
+/* 4. RESPONSIVIDADE (Mobile) */
+/* ==================================== */
+
+@media (max-width: 768px) {
+    .pagina-cadastro {
+        padding: 20px;
+    }
+
+    .form-cadastro label {
+        font-size: 16px;
+    }
+
+    .form-cadastro input {
+        font-size: 18px;
+    }
+
+    .botao-primario {
+        font-size: 18px;
+    }
+}

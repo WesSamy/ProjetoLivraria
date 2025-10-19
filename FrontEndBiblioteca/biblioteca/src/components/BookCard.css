@@ -1,0 +1,65 @@
+.book-card {
+    max-height: 420px;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+}
+
+/* imagem */
+.book-image {
+    object-fit: cover;
+}
+
+/* conteúdo central */
+.book-content {
+    flex-grow: 1;
+    padding: 16px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* título */
+.book-title {
+    font-weight: 900 !important;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    max-height: 3.6em; /* 3 linhas */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    white-space: normal; /* permite quebra de linha */
+    word-break: break-word; /* quebra palavras muito longas */
+    text-overflow: ellipsis; /* adiciona "..." no final */
+    text-align: center;
+}
+
+/* ações */
+.book-actions {
+    justify-content: center;
+    padding-bottom: 16px;
+    padding-top: 0;
+    margin-top: auto;
+}
+
+/* botão */
+.book-button {
+    background-color: #6e7964ff !important;
+    border-radius: 0 !important;
+}
+
+.book-button:hover {
+    background-color: #5c6353ff !important;
+}
+
+/* --- opcional: animação hover --- */
+.book-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s ease-in-out;
+}
